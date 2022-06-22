@@ -13,6 +13,14 @@ public class SumMatrixValues {
 
   public static void main(String[] args) {
 
-  }
+    int[][] matrix = {{2, 4, 6, 6}, {2, 4, 6, 8}, {2, 4, 6, 2}};
+    int sum = 0;
 
+    for (int i = 0; i < matrix[0].length; i++) {
+      for (int j = 0; j < matrix.length; j++) {
+        sum = sum + matrix[j][i];
+      }
+    }
+    System.out.println(sum);
+  }
 }
