@@ -16,15 +16,15 @@ public class MatrixCombined {
     int[][] sumMatrix = sumTwoMatrix(matrixReadOne, matrixReadTwo);
     int sumFinal = sumMatrixValues(sumMatrix);
 
-    System.out.println("La somma finale e': " + sumFinal);
+    System.out.println("RESULT: " + sumFinal);
   }
 
   private static int sumMatrixValues(int[][] sumMatrix) {
     int sum = 0;
 
     for (int i = 0; i < sumMatrix[0].length; i++) {
-      for (int j = 0; j < sumMatrix.length; j++) {
-        sum = sum + sumMatrix[j][i];
+      for (int[] matrix : sumMatrix) {
+        sum = sum + matrix[i];
       }
     }
     return sum;

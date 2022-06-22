@@ -16,8 +16,8 @@ public class SumMatrixValues {
     int sum = 0;
 
     for (int i = 0; i < matrix[0].length; i++) {
-      for (int j = 0; j < matrix.length; j++) {
-        sum = sum + matrix[j][i];
+      for (int[] ints : matrix) {
+        sum = sum + ints[i];
       }
     }
     System.out.println("RESULT:" + sum);
