@@ -36,7 +36,7 @@ public class ReadMatrix {
 
     System.out.println("{");
     for (int i = 0; i < matrix[0].length; i++) {
-      System.out.print("{");
+      System.out.print("  {");
       for (int j = 0; j < matrix.length; j++) {
         System.out.print(matrix[i][j]);
         if (j != 2) {
