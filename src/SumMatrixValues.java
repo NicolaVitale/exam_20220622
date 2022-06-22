@@ -12,7 +12,6 @@
 public class SumMatrixValues {
 
   public static void main(String[] args) {
-
     int[][] matrix = {{2, 4, 6}, {2, 4, 6}, {2, 4, 6}};
     int sum = 0;
 

@@ -11,12 +11,9 @@ import java.util.regex.Pattern;
 public class MatrixCombined {
 
   public static void main(String[] args) {
-
     int[][] matrixReadOne = readMatrix(args[0]);
     int[][] matrixReadTwo = readMatrix(args[1]);
-
     int[][] sumMatrix = sumTwoMatrix(matrixReadOne, matrixReadTwo);
-
     int sumFinal = sumMatrixValues(sumMatrix);
 
     System.out.println("La somma finale e': " + sumFinal);
@@ -48,7 +45,6 @@ public class MatrixCombined {
     String rigaRex = "\\{(\\d+)\\,(\\d+)\\,(\\d+)\\}";
     Pattern pattern = Pattern.compile("\\{" + rigaRex + "\\," + rigaRex + "\\," + rigaRex + "\\}");
     int[][] matrix = new int[3][3];
-
     Matcher matcher = pattern.matcher(arg);
 
     if (matcher.matches()) {

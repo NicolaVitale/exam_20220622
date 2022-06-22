@@ -19,7 +19,6 @@ public class ReadMatrix {
     String rigaRex = "\\{(\\d+)\\,(\\d+)\\,(\\d+)\\}";
     Pattern pattern = Pattern.compile("\\{" + rigaRex + "\\," + rigaRex + "\\," + rigaRex + "\\}");
     int[][] matrix = new int[3][3];
-
     Matcher matcher = pattern.matcher(args[0]);
 
     if (matcher.matches()) {

@@ -26,7 +26,6 @@ import java.util.Arrays;
 public class SumTwoMatrix {
 
   public static void main(String[] args) {
-
     int[][] matrixFirst = {{1, 2, 3}, {1, 2, 3}, {1, 2, 3}};
     int[][] matrixSecond = {{1, 2, 3}, {1, 2, 3}, {1, 2, 3}};
     int[][] matrixSum = new int[matrixFirst.length][matrixFirst[0].length];
