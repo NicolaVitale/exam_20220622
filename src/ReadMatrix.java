@@ -16,8 +16,8 @@ import java.util.regex.Pattern;
 public class ReadMatrix {
 
   public static void main(String[] args) {
-    String rigaRex = "\\{(\\d+)\\,(\\d+)\\,(\\d+)\\}";
-    Pattern pattern = Pattern.compile("\\{" + rigaRex + "\\," + rigaRex + "\\," + rigaRex + "\\}");
+    String rigaRex = "\\{(\\d+),(\\d+),(\\d+)}";
+    Pattern pattern = Pattern.compile("\\{" + rigaRex + "," + rigaRex + "," + rigaRex + "}");
     int[][] matrix = new int[3][3];
     Matcher matcher = pattern.matcher(args[0]);
 
@@ -33,7 +33,7 @@ public class ReadMatrix {
       System.out.print("Input non valido");
     }
 
-    System.out.println("{");
+    System.out.println("RESULT: {");
     for (int i = 0; i < matrix[0].length; i++) {
       System.out.print("  {");
       for (int j = 0; j < matrix.length; j++) {

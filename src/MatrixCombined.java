@@ -42,8 +42,8 @@ public class MatrixCombined {
   }
 
   private static int[][] readMatrix(String arg) {
-    String rigaRex = "\\{(\\d+)\\,(\\d+)\\,(\\d+)\\}";
-    Pattern pattern = Pattern.compile("\\{" + rigaRex + "\\," + rigaRex + "\\," + rigaRex + "\\}");
+    String rigaRex = "\\{(\\d+),(\\d+),(\\d+)}";
+    Pattern pattern = Pattern.compile("\\{" + rigaRex + "," + rigaRex + "," + rigaRex + "}");
     int[][] matrix = new int[3][3];
     Matcher matcher = pattern.matcher(arg);
 
