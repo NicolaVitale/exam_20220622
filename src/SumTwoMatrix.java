@@ -36,12 +36,12 @@ public class SumTwoMatrix {
       }
     }
 
-    System.out.println("{");
+    System.out.println("RESULT {");
     for (int i = 0; i < matrixSum[0].length; i++) {
       System.out.print("  {");
       for (int j = 0; j < matrixSum.length; j++) {
         System.out.print(matrixSum[j][i]);
-        if (j != 2) {
+        if (j < 2) {
           System.out.print(",");
         }
       }
