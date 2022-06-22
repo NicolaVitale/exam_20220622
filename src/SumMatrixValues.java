@@ -20,6 +20,6 @@ public class SumMatrixValues {
         sum = sum + matrix[j][i];
       }
     }
-    System.out.println(sum);
+    System.out.println("RESULT:" + sum);
   }
 }
